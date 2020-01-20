@@ -5,22 +5,22 @@ Thank you very much for offering your time to seeing my project!
 Here you will see a PHP MVC that I am using for my projects. I have used object-oriented programming along PDO.
 
 ## Folder structure
-
-ROOT: .htaccess
-|__ public: index.php, .htaccess
-|__ css: style.css
-|__ js: main.js
-|__ img
-|__app: bootstrap.php, .htaccess
-       	|__ libraries: Core.php, Database.php, Controller.php
-|__models: Post.php
-|__view
-	|__pages: index.php, about.php
-|__inc: header.php, footer.php
-|__controllers: Pages.php
-|__helpers
-|__config: config.php
-
+```
+	ROOT: .htaccess
+	|__ public: index.php, .htaccess
+	|__ css: style.css
+	|__ js: main.js
+	|__ img
+	|__app: bootstrap.php, .htaccess
+		|__ libraries: Core.php, Database.php, Controller.php
+	|__models: Post.php
+	|__view
+		|__pages: index.php, about.php
+	|__inc: header.php, footer.php
+	|__controllers: Pages.php
+	|__helpers
+	|__config: config.php
+```
 
 ## Details
 
@@ -172,6 +172,6 @@ The controller loads the model, calls a model function (getPosts), sets it to a 
 > return $this->db->resultSet();
 > Then go to the ‘index’ method from controllers/pages and call it.
 
-##Deploying
+## Deploying
 If the application will be added inside of a folder, not to the root, go to ‘public/.htaccess’ and change the RewriteBase, add your folder.
 Go to app/config/config.php and change the DB details and the URLROOT. 
